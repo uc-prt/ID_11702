@@ -1,0 +1,66 @@
+.reviewchk {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 70px;
+}
+
+.version {
+    top: 3px;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+}
+
+.auth_active {
+    background-color: rgba(219, 212, 212, 0.596) !important;
+    color: rgb(156, 64, 64) !important;
+}
+
+.authoring_view {
+    height: 100vh;
+}
+
+.text {
+    width: 100px;
+    height: 30px;
+    outline: none;
+    background-color: rgba(247, 225, 246, 0.918);
+    text-transform: lowercase;
+}
+
+.text:focus {
+    border: 1px solid rgb(64, 152, 179);
+    box-shadow: 4px 4px 6px rgba(132, 179, 218, 0.4);
+}
+
+.bg-sky_blue {
+    background-color: rgba(182, 228, 236, 0.8);
+    height: 260px;
+}
+
+.bg-white {
+    height: 223px;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+#menu li {
+    display: inline;
+    padding: 0.5em 1em 0.1em 1em;
+    font-size: 18px;
+}
+
+#menu li a {
+    text-decoration: none;
+}
+
+.clicked {
+    background-color: rgba(230, 224, 224, 0.534);
+}
+
+.unclicked {
+    background-color: #fff;
+}
