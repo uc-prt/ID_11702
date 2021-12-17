@@ -13,7 +13,7 @@
     beforeUpdate(() => {
         for (let i in xml_arr) {
             // For extracting the value between %{ANYTEXT}%. i.e. return value ANYTEXT; 
-		    data_array[i] = xml_arr[i].replace(/%{/gm, "").replace(/}%/gm, "").replace(/|d}%/gm, "");
+            data_array[i] = xml_arr[i].replace(/%{/gm, "").replace(/}%/gm, "").replace(/|d}%/gm, "");
             input_box = `<input type="text" class="input_set text" id="inputBox${i}" correct_ans=${data_array[i]} user_ans='' index=${i} style="width:100px;"/>`;
             regex = new RegExp(xml_arr[i]);
             // Here we replace all regex value with input box
