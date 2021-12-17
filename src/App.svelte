@@ -68,9 +68,4 @@
 		<FillInTheBlanksPreview {default_xml}/>
 		{/if}
 	</div>
-	<Modal>
-		<div slot="modal_body">
-			{default_xml}
-		</div>
-	</Modal>
 </main>
