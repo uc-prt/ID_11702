@@ -58,13 +58,13 @@
 <main>
 	<Header {menu} {default_xml}/>
 	<ul class="container mt-2 border-bottom" id="menu">
-        <li class="{menu?"clicked":"unclicked"}"><a href="/" on:click|preventDefault={() => {menu = true;location.reload();}}>Authoring </a></li> 
+        <li class="{menu?"clicked":"unclicked"}"><a href="/" on:click|preventDefault={() => {menu = true;}}>Authoring </a></li> 
         <li class="{!menu?"clicked":"unclicked"}"><a href="/" on:click|preventDefault={() => (menu = false)}>Preview</a></li>
     </ul>
 	<div>
 		{#if menu==true}
 		<FillInTheBlanks {index} {set_value} {auth_xml} on:update={update_XML(index)}/>
-		{:else if !menu}
+		{:else}
 		<FillInTheBlanksPreview {default_xml}/>
 		{/if}
 	</div>
