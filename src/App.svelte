@@ -21,7 +21,7 @@
 		for (let i in xml_arr) {
 			// For extracting the value between %{ANYTEXT}%. i.e. return value ANYTEXT; 
 		    inputs = xml_arr[i].replace(/%{/gm, "").replace(/|d}%/gm, "").replace(/}%/gm, "");
-		    input_data = `<span class="px-5 border border-primary" index=${i} id="input_box${i}" original_key=${inputs}  data-bs-toggle="modal" data-bs-target="#Modal_data"></span>`;
+		    input_data = `<span class="px-5 border border-primary" index=${i} id="input_box${i}" original_key=${inputs}  data-bs-toggle="modal" data-bs-target="#exampleModal1"></span>`;
 		    regex = new RegExp(xml_arr[i]);
 		    // Here we replace all regex value with input_box
 		    auth_xml = auth_xml.replace(regex,input_data)
@@ -56,7 +56,7 @@
 </script>
 <!-- Here our UI Start -->
 <main>
-	<Header {menu}/>
+	<Header {menu} {default_xml}/>
 	<ul class="container mt-2 border-bottom" id="menu">
         <li class="{menu?"clicked":"unclicked"}"><a href="/" on:click|preventDefault={() => {menu = true;location.reload();}}>Authoring </a></li> 
         <li class="{!menu?"clicked":"unclicked"}"><a href="/" on:click|preventDefault={() => (menu = false)}>Preview</a></li>
