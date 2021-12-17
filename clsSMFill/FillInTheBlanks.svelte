@@ -1,4 +1,5 @@
 <script>
+    import Modal from "../src/Components/Modal.svelte";
     import { createEventDispatcher } from "svelte";
     const dispatch = createEventDispatcher();
     export let auth_xml;
