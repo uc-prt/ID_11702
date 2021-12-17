@@ -18,7 +18,7 @@
             regex = new RegExp(xml_arr[i]);
             // Here we replace all regex value with input box
             auth_xml = auth_xml.replace(regex, input_box);
-	    }
+	}
     })
     onMount(() => {
         // Here we toggle the switch value
