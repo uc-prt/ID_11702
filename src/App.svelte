@@ -58,7 +58,7 @@
 <main>
 	<Header {menu}/>
 	<ul class="container mt-2 border-bottom" id="menu">
-        <li class="{menu?"clicked":"unclicked"}"><a href="/" on:click|preventDefault={() => (menu = true)}>Authoring </a></li> 
+        <li class="{menu?"clicked":"unclicked"}"><a href="/" on:click|preventDefault={() => {menu = true;location.reload();}}>Authoring </a></li> 
         <li class="{!menu?"clicked":"unclicked"}"><a href="/" on:click|preventDefault={() => (menu = false)}>Preview</a></li>
     </ul>
 	<div>
