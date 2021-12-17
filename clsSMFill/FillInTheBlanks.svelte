@@ -29,49 +29,48 @@
     </div>
   </div>
   <!--  Modal Here -->
-    <div class="modal fade" id="Modal_data" tabindex="-1" aria-labelledby="modal" aria-hidden="true" >
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title" id="exampleModalLabel1">XML</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" />
+   <Modal>
+		<div slot="modal_header">
+			<h3>
+				XML
+			</h3>
+		</div>
+		<div slot="modal_body">
+			<div>
+				<div class="form-check d-inline-block float-left">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1"/>
+                    <label class="form-check-label" for="flexCheckDefault1">
+                        Code
+                    </label>
                 </div>
-                <div class="modal-body">
-                    <div class="form-check d-inline-block float-left">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1"/>
-                        <label class="form-check-label" for="flexCheckDefault1">
-                            Code
-                        </label>
-                    </div>
-                    <div class="form-check d-inline-block float-right" style="margin-left: 20%;">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" />
-                        <label class="form-check-label" for="flexCheckDefault2">Numeric</label>
-                    </div>
-                    <input type="text" id="set_xml{index}" class="form-control my-3" value='{set_value}' placeholder="Write your correct answer" />
-                    <div class="form-check d-inline-block float-right">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2"/>
-                        <label class="form-check-label" for="flexCheckDefault2">Enable Style</label>
-                    </div>
-                    <input type="text" class="form-control my-3" placeholder="Custom Style" disabled="disabled" />
-                    <div class="text-danger" style="font-size: 13px;">
-                        <h6>*Note :</h6>
-                        <p>
-                            1. To include multiple correct answers, type the
-                            answers and separate them with a comma (,). Please
-                            do not include any space. Now, go back to the
-                            Settings and select Multiple Correct Answers from
-                            the drop-down
-                        </p>
-                        <p>
-                            2. Use #cm for comma (e.g., 5,000 as 5#cm000,
-                            function(a,b) as function(a#cmb)).
-                        </p>
-                    </div>
+                <div class="form-check d-inline-block float-right" style="margin-left: 20%;">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" />
+                    <label class="form-check-label" for="flexCheckDefault2">Numeric</label>
                 </div>
-                <div class="modal-footer border-0">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCEL</button>
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" on:click="{()=>dispatch("update",index)}">DONE</button>
+                <input type="text" id="set_xml{index}" class="form-control my-3" value='{set_value}' placeholder="Write your correct answer" />
+                <div class="form-check d-inline-block float-right">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2"/>
+                    <label class="form-check-label" for="flexCheckDefault2">Enable Style</label>
                 </div>
-            </div>
+                <input type="text" class="form-control my-3" placeholder="Custom Style" disabled="disabled" />
+                <div class="text-danger" style="font-size: 13px;">
+                    <h6>*Note :</h6>
+                    <p>
+                        1. To include multiple correct answers, type the
+                        answers and separate them with a comma (,). Please
+                        do not include any space. Now, go back to the
+                        Settings and select Multiple Correct Answers from
+                        the drop-down
+                    </p>
+                    <p>
+                        2. Use #cm for comma (e.g., 5,000 as 5#cm000,
+                        function(a,b) as function(a#cmb)).
+                    </p>
+                </div>
+			</div>
+		</div>
+		<div slot="modal_footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCEL</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" on:click="{()=>dispatch("update",index)}">DONE</button>
         </div>
-    </div>
+	</Modal>
