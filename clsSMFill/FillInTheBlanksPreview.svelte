@@ -2,10 +2,10 @@
     import { afterUpdate, beforeUpdate, onMount } from "svelte";
     import { XMLToJSON } from "../helper/HelperAI.svelte";
     export let default_xml;
-    let data_array=[];
+    let data_array = [];
     let input_box = '';
     let regex = '';
-    let marked=false;
+    let marked = false;
     let checked = false;
     let data = XMLToJSON(default_xml)["smxml"]["text"]["__cdata"];  // Here we get the data in human readable format
     let auth_xml = data;
