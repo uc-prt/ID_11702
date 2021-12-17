@@ -30,15 +30,19 @@
     </div>
   </div>
   <!--  Modal Here -->
-   <Modal>
+    <Modal>
 		<div slot="modal_header">
-		     <h3> XML </h3>
+			<h3>
+				XML
+			</h3>
 		</div>
 		<div slot="modal_body">
 			<div>
-			<div class="form-check d-inline-block float-left">
+				<div class="form-check d-inline-block float-left">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1"/>
-                    <label class="form-check-label" for="flexCheckDefault1">Code</label>
+                    <label class="form-check-label" for="flexCheckDefault1">
+                        Code
+                    </label>
                 </div>
                 <div class="form-check d-inline-block float-right" style="margin-left: 20%;">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" />
